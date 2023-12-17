@@ -1,0 +1,736 @@
+:root {
+    --tertiary-text-color : #fff;
+    --border-none: none;
+    --boxshadow-none : none;
+    --main-padding-top : 6.25rem;
+    --main-padding-bottom : 6.25rem;
+    --progress-bg : #f7f7f7;
+    --progress-bar-bg : #1c1c1c;
+    --progress-bar-br-radius : 0.375rem;
+    --progress-mb : 1.875rem;
+    --main-btn-bg : #1c1c1c;
+    --main-btn-color : #eee;
+    --secondary-btn-color : #343434;
+    --btn-fs : 0.8125rem;
+    --btn-padding-x : 1.875rem;
+    --btn-padding-y : 0.625rem;
+    --main-title-mb : 5rem;
+    --secondary-icon-hover-bg : #111;
+    --secondary-icon-hover-color : #eee;
+    --secondary-bg : #f7f7f7;
+    --head-color : #343434;
+    --head-fs : 2.5rem;
+    --sub-head-fs : 1.125rem;
+    --content-color : #748182;
+    --cursol-img-width : 6.25rem;
+    --cursol-img-height : 6.25rem;
+    --cursol-btn-width : 0.625rem;
+    --cursol-btn-height : 0.625rem;
+    --footer-padding : 1.875rem;
+    --footer-bg : #1c1c1c;
+    --input-bg : #f4f4f4;
+}
+
+@font-face {
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: "secondary-text-family";
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../Image/bg.jpg) 0px 0px / cover;
+}
+
+.nav-box-shadow {
+    box-shadow: 0px 30px 50px rgb(0 0 0 / 5%);
+}
+
+header .typing-animation::after {
+    content: " |";
+    font-weight: bolder;
+    animation: typing 10s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: " |";
+    }
+
+    1.724% {
+        content: " l|";
+    }
+
+    3.448% {
+        content: " la|";
+    }
+
+    5.172% {
+        content: " lar|";
+    }
+
+    6.896% {
+        content: " larr|";
+    }
+
+    8.62% {
+        content: " larry |";
+    }
+
+    10.344% {
+        content: " larry d|";
+    }
+
+    12.068% {
+        content: " larry da|";
+    }
+
+    13.792% {
+        content: " larry dan|";
+    }
+
+    15.516% {
+        content: " larry dani|";
+    }
+
+    17.24% {
+        content: " larry danie|";
+    }
+
+    18.964% {
+        content: " larry daniel|";
+    }
+
+    20.688% {
+        content: " larry daniels|";
+    }
+
+    22.412% {
+        content: " larry daniel|";
+    }
+
+    24.136% {
+        content: " larry danie|";
+    }
+
+    25.86% {
+        content: " larry dani|";
+    }
+
+    27.584% {
+        content: " larry dan|";
+    }
+
+    29.308% {
+        content: " larry da|";
+    }
+
+    31.032% {
+        content: " larry d|";
+    }
+
+    32.756% {
+        content: " larry |";
+    }
+
+    34.48% {
+        content: " larr|";
+    }
+
+    36.204% {
+        content: " lar|";
+    }
+
+    37.928% {
+        content: " la|";
+    }
+
+    39.652% {
+        content: " l|";
+    }
+
+    41.376% {
+        content: " |";
+    }
+
+    43.1% {
+        content: " d|";
+    }
+
+    44.824% {
+        content: " de|";
+    }
+
+    46.548% {
+        content: " dev|";
+    }
+
+    48.272% {
+        content: " deve|";
+    }
+
+    49.996% {
+        content: " devel|";
+    }
+
+    51.72% {
+        content: " develo|";
+    }
+
+    52.994% {
+        content: " develop|";
+    }
+
+    54.718% {
+        content: " develope|";
+    }
+
+    55.992% {
+        content: " developer|";
+    }
+
+    57.716% {
+        content: " develope|";
+    }
+
+    59.44% {
+        content: " develop|";
+    }
+
+    61.164% {
+        content: " develo|";
+    }
+
+    62.888% {
+        content: " devel|";
+    }
+
+    64.612% {
+        content: " deve|";
+    }
+
+    66.336% {
+        content: " dev|";
+    }
+
+    68.06% {
+        content: " de|";
+    }
+
+    69.784% {
+        content: " d|";
+    }
+
+    71.508% {
+        content: " |";
+    }
+
+    73.232% {
+        content: " d|";
+    }
+
+    74.956% {
+        content: " de|";
+    }
+
+    76.68% {
+        content: " des|";
+    }
+
+    78.404% {
+        content: " desi|";
+    }
+
+    80.128% {
+        content: " desin|";
+    }
+
+    81.852% {
+        content: " desing|";
+    }
+
+    83.576% {
+        content: " desinge|";
+    }
+
+    85.3% {
+        content: " desinger|";
+    }
+
+    87.024% {
+        content: " desinge|";
+    }
+
+    88.748% {
+        content: " desing|";
+    }
+
+    90.472% {
+        content: " desin|";
+    }
+
+    92.196% {
+        content: " desi|";
+    }
+
+    93.92% {
+        content: " des|";
+    }
+
+    95.644% {
+        content: " de|";
+    }
+
+    97.368% {
+        content: " d|";
+    }
+
+    100% {
+        content: " |";
+    }
+}
+
+.w-35-rem {
+    width: 2.1875rem;
+}
+
+.h-35-rem {
+    height: 2.1875rem;
+}
+
+.tertiary-text-color {
+    color: var(--tertiary-text-color);
+}
+
+.border-none {
+    border: var(--border-none) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: var(--boxshadow-none);
+}
+
+.py-100 {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+
+.py-5-rem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.progress-bar-bg {
+    background: var(--progress-bar-bg);
+}
+
+.progress-bg {
+    background: var(--progress-bg);
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.progress-bar-br-radius {
+    border-radius: var(--progress-bar-br-radius);
+}
+
+.progress-mb {
+    margin-bottom: var(--progress-mb);
+}
+
+#about .about-btn .btn {
+    font-size: var(--btn-fs);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+}
+
+#about .about-btn .btn.btn-download {
+    background: var(--main-btn-bg);
+    color: var(--main-btn-color);
+}
+
+.main-btn-bg {
+    background-attachment: var(--main-btn-bg);
+}
+
+.main-btn-color {
+    color: var(--main-btn-color);
+}
+
+#about .about-btn .btn-outline-dark.btn-contact {
+    color: var(--secondary-btn-color);
+}
+
+#about .about-btn .btn {
+    transition: all .5s ease-in-out;
+}
+
+#about .about-btn .btn-outline-dark.btn-contact:hover {
+    color: var(--main-btn-color);
+}
+
+#about .about-btn .btn-outline-dark.btn-download:hover {
+    background-color: transparent;
+    color: var(--secondary-btn-color);
+}
+
+.mt-30 {
+    margin-top: 1.875rem;
+}
+
+.mt-20 {
+    margin-top: 1.25rem;
+}
+
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.ps-30 {
+    padding-left: 1.875rem;
+}
+
+.mb-15 {
+    margin-bottom: 0.9375rem;
+}
+
+.letter-space-2 {
+    letter-spacing: 2px;
+}
+
+#about .dots::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background: url(../Image/dots.png) repeat;
+    z-index: -1;
+}
+
+.main-title-mb {
+    margin-bottom: var(--main-title-mb);
+}
+
+.w-70 {
+    width: 4.375rem;
+}
+
+.h-70 {
+    height: 4.375rem;
+}
+
+.py-50 {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.px-20 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.mb-15 {
+    margin-bottom: 0.9375rem;
+}
+
+#service .icon-color-hover:hover .icon i {
+    color: var(--secondary-icon-hover-color);
+}
+
+#service .icon-bg-hover:hover .icon {
+    background: var(--secondary-icon-hover-bg) !important;
+}
+
+#service .icon {
+    transition: background .5s;
+}
+
+#service .icon i {
+    transition: color .5s;
+}
+
+
+.main-box-shadow {
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+}
+
+.bg-gray {
+    background: var(--secondary-bg);
+}
+
+#service .dots::after , #client .dots::after , #work .dots::after , #team .dots::after , #contact .dots::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: url(../Image/dots.png) repeat;
+    z-index: -1;
+}
+
+.heading-color {
+    color: var(--head-color);
+}
+
+.heading-fs {
+    font-size: var(--head-fs);
+}
+
+.fs-30 {
+    font-size: 1.875rem;
+}
+
+.sub-head-fs {
+    font-size: var(--sub-head-fs);
+}
+
+.word-space-2 {
+    word-spacing: 2px;
+}
+
+.content-color {
+    color : var(--content-color);
+}
+
+.cursol-img-width {
+    width: var(--cursol-img-width);
+}
+
+.cursol-img-height {
+    height: var(--cursol-img-height);
+}
+
+
+#client .carousel-indicators {
+    position: static;
+}
+
+#client .carousel-indicators button:hover {
+    background-color: #869791;
+}
+
+#client .carousel-indicators button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: #d6d6d6;
+    opacity: 1;
+}
+
+#client .carousel-indicators .active {
+    background-color: #869791;
+}
+
+.mb-5-rem {
+    margin-bottom: 0.3125rem;
+}
+
+.fs-30 {
+    font-size: 1.875rem;
+}
+
+
+.w-30 {
+    width: 1.875rem;
+}
+
+.h-30 {
+    height: 1.875rem;
+}
+
+#work .img-overlay {
+    top: 10px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+#work .img-overlay h6 {
+    margin-bottom: 15px;
+}
+
+#work .item .img-overlay {
+    transition: opacity .5s , top .5s;
+}
+
+#work .item:hover .img-overlay {
+    opacity: 1 !important;
+    top: 5px;
+}
+
+#work .item .img-overlay > div h6 {
+    transition: margin-bottom .5s;
+}
+
+#work .item:hover .img-overlay > div h6 {
+    margin-bottom: 5px;
+}
+
+#work .nav-pills .nav-link.active , nav-pills .show > .nav-link {
+    background-color: transparent;
+}
+
+#work .nav-link {
+    color: black;
+}
+
+#work .item .img-overlay div a {
+    transition: background-color .5s;
+}
+
+#work .item .img-overlay div a:hover {
+    background-color: white !important;
+}
+
+#work .item .img-overlay div a:hover i {
+    color: #111 !important;
+}
+
+#work .item .img-overlay div a i {
+    transition: color 0.5s;
+}
+
+#work .item .img-overlay div a {
+    border: solid 1px black;
+}
+
+.top-5 {
+    top: 5px;
+}
+
+.bottom-5 {
+    bottom: 5px;
+}
+
+.left-5 {
+    left: 5px;
+}
+
+.right-5 {
+    right: 5px;
+}
+
+#team .single-team {
+    background-color: rgba(52, 52, 52, .8);
+}
+
+.fs-20 {
+    font-size: 1.25rem;
+}
+
+#team .single-team .overlay {
+    transform: rotateY(180deg) scale(.5);
+}
+
+#team .single-team .overlay {
+    transition: opacity .5s , transform .5s;
+}
+
+#team .single-team:hover .overlay {
+    opacity: 1 !important;
+    transform: rotateY(360deg) scale(1);
+}
+
+#team .single-team div:first-child img {
+    transition: transform .4s;
+}
+
+#team .single-team div:first-child:hover img {
+    transform: scale(1.2);
+}
+
+#team .single-team .overlay a {
+    transition: background .2s;
+}
+
+#team .single-team .overlay a:hover {
+    background: #fff !important;
+}
+
+#team .single-team .overlay a i {
+    transition: color .2s;
+}
+
+#team .single-team .overlay a:hover i {
+    color: black !important;
+}
+
+.footer-padding {
+    padding: var(--footer-padding);
+}
+
+.footer-bg {
+    background: var(--footer-bg);
+}
+
+.mb-10 {
+    margin-bottom: 0.625rem;
+}
+
+#contact .item div:first-child {
+    transition: background .5s;
+}
+
+#contact .item:hover div:first-child {
+    background-color: var(--secondary-icon-hover-bg) !important;
+}
+
+#contact .item div i {
+    transition: color .5s;
+}
+
+#contact .item:hover div i {
+    color: var(--secondary-icon-hover-color);
+}
+
+.p-blank-10 {
+    padding: 0.625rem;
+}
+
+.input-bg {
+    background: var(--input-bg);
+}
+
+.h-160 {
+    height: 10rem;
+}
+
+.mt-50 {
+    margin-top: 3.125rem;
+}
+
+#contact form .form-btn .btn {
+    background: var(--main-btn-bg);
+    color: var(--main-btn-color);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+}
+
+#contact form .form-btn .btn {
+    transition: all .5s ease-in-out;
+}
+
+#contact form .form-btn .btn-outline-dark:hover {
+    background: transparent;
+    color: var(--secondary-btn-color);
+}
+
+#contact form .form-group input:focus , #contact form .form-group textarea:focus {
+    outline: none;
+}
+
+.fs-50 {
+    font-size: 3.125rem;
+}
+
+.fs-70 {
+    font-size: 4.375rem;
+}
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}
